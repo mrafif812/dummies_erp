@@ -195,6 +195,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Nwidart\Modules\LaravelModulesServiceProvider::class,
+        Laravel\Fortify\FortifyServiceProvider::class,
 
     ],
 
