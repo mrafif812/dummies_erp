@@ -145,7 +145,7 @@
                         <div class="card-header">
                             <h6 class="card-title mb-0">Birthdays</h6>
                         </div>
-                        <div class="card-body overflow-auto">
+                        <div class="card-body overflow-scroll-y">
                             <div class="d-flex mb-4 align-items-center">
                                 <div class="flex-shrink-0">
                                     <img src="assets/images/users/avatar-1.jpg" alt=""
@@ -184,7 +184,7 @@
                         <div class="card-header">
                             <h6 class="card-title mb-0">Work From Home</h6>
                         </div>
-                        <div class="card-body overflow-auto">
+                        <div class="card-body overflow-scroll-y">
                             <div class="d-flex mb-4 align-items-center">
                                 <div class="flex-shrink-0">
                                     <img src="assets/images/users/avatar-1.jpg" alt=""
@@ -223,7 +223,7 @@
                         <div class="card-header">
                             <h6 class="card-title mb-0">On Leaves</h6>
                         </div>
-                        <div class="card-body overflow-auto">
+                        <div class="card-body overflow-scroll-y">
                             <div class="d-flex mb-4 align-items-center">
                                 <div class="flex-shrink-0">
                                     <img src="assets/images/users/avatar-1.jpg" alt=""
