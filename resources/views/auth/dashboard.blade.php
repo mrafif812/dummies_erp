@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.2/css/buttons.dataTables.min.css">
 @endsection
 
+@section('breadcrumbs')
+    @include('includes.breadcrumbs', ['main' => 'Dashboard', 'child' => 'Dashboard'])
+@endsection
+
 @section('content')
     <div class="row project-wrapper">
         <div class="col-xxl-8">

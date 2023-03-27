@@ -51,8 +51,8 @@
             <div class="page-content">
                 <div class="container-fluid">
 
-                    @include('includes.breadcrumbs')
-
+                    {{-- @include('includes.breadcrumbs') --}}
+                    @yield('breadcrumbs')
                     @yield('content')
 
                 </div>
