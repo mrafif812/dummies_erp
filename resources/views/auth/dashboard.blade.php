@@ -13,7 +13,7 @@
 @endsection
 
 @section('breadcrumbs')
-    @include('includes.breadcrumbs', ['main' => 'Dashboard', 'child' => 'Dashboard'])
+    @include('includes.breadcrumbs', ['heading' => 'Dashboard', 'main' => 'Dashboard', 'child' => 'Dashboard'])
 @endsection
 
 @section('content')
@@ -1117,5 +1117,5 @@
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.print.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/2.2.2/js/buttons.html5.min.js"></script>
 
-    <script src="assets/js/pages/datatables.init.js"></script>
+    <script src="{{asset('assets/js/pages/datatables.init.js')}}"></script>
 @endsection

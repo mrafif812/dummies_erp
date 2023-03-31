@@ -11,6 +11,10 @@
 |
 */
 
-Route::prefix('projectmanagement')->group(function() {
+use Modules\ProjectManagement\Http\Controllers\contract\ContractTypeController;
+
+Route::middleware('auth')->prefix('projectmanagement')->group(function() {
     Route::get('/', 'ProjectManagementController@index');
+
+    Route::resource('contract-type', ContractTypeController::class);
 });
