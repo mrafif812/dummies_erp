@@ -34,7 +34,7 @@
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span data-key="t-menu">Menu</span></li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{route('home')}}">
+                    <a class="nav-link menu-link" href="{{ route('home') }}">
                         <i class="ri-dashboard-2-line"></i> <span data-key="t-dashboards">Dashboard</span>
                     </a>
                 </li>
@@ -57,7 +57,22 @@
                                 <a href="dashboard-crm.html" class="nav-link" data-key="t-tasks"> Tasks </a>
                             </li>
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link" data-key="t-contracts"> Contracts </a>
+                                <a class="nav-link menu-link" href="#sidebarContract" data-bs-toggle="collapse"
+                                    role="button" aria-expanded="false" aria-controls="sidebarContract">
+                                    <span data-key="t-contract">Contract</span>
+                                </a>
+                                <div class="collapse menu-dropdown" id="sidebarContract">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="dashboard-analytics.html" class="nav-link" data-key="t-contract">
+                                                Contract </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="dashboard-crm.html" class="nav-link" data-key="t-contract-type">
+                                                Contract Type </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a href="dashboard-crypto.html" class="nav-link" data-key="t-timelogs"> Timelogs

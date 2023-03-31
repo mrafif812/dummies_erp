@@ -196,5 +196,6 @@
     "t-work":"Work",
     "t-project-management":"Project Management",
     "t-contracts":"Contracts",
-    "t-timelogs":"Timelogs",
+    "t-contract-type":"Contract Type",
+    "t-timelogs":"Timelogs"
 }
