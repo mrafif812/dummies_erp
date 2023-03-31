@@ -11,6 +11,7 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
 use Modules\ProjectManagement\Http\Controllers\contract\ContractTypeController;
 
 Route::middleware('auth')->prefix('projectmanagement')->group(function() {

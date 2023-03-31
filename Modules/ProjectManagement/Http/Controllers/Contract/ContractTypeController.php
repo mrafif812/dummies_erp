@@ -23,7 +23,7 @@ class ContractTypeController extends Controller
      */
     public function create()
     {
-        return view('projectmanagement::create');
+        
     }
 
     /**

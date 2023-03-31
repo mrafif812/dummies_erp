@@ -13,8 +13,8 @@
 @section('breadcrumbs')
     @include('includes.breadcrumbs', [
         'heading' => 'Contract Type',
-        'main' => 'Work',
-        'child' => 'Contract Type',
+        'main' => 'Contract Type',
+        'child' => 'List',
     ])
 @endsection
 
@@ -24,9 +24,8 @@
             <!-- end row -->
             <div class="row">
                 <div class="d-flex justify-content-end pb-4">
-                    <a href="#" type="button"
-                        class="btn btn-sm btn-outline-success waves-effect waves-light shadow-lg"><i
-                            class="fa-solid fa-plus"></i>
+                    <a type="button" class="btn btn-sm btn-outline-success waves-effect waves-light shadow-lg"
+                        data-bs-toggle="modal" data-bs-target="#exampleModalgrid"><i class="fa-solid fa-plus"></i>
                     </a>
                 </div>
                 <div class="col-xl-12">
@@ -108,6 +107,38 @@
 
                         </tbody>
                     </table>
+
+                    {{-- create modal --}}
+                    <div class="modal fade" id="exampleModalgrid" tabindex="-1" aria-labelledby="exampleModalgridLabel">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalgridLabel">Create Contract Type</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    {!! Form::open(['method' => 'Post']) !!}
+                                    <div class="row g-3">
+                                        <div class="col-xxl-12">
+                                            @include('projectmanagement::contract-type.includes.form')
+                                        </div>
+                                        <!--end col-->
+                                        <div class="col-lg-12">
+                                            <div class="hstack gap-2 justify-content-end">
+                                                <button type="button" class="btn btn-light"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                    {!! Form::submit('Submit', ['class' => 'btn btn-primary']) !!}
+                                            </div>
+                                        </div>
+                                        <!--end col-->
+                                    </div>
+                                    <!--end row-->
+                                    {!! Form::close() !!}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
